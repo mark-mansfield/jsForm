@@ -1,0 +1,123 @@
+{
+
+    "menu": {
+        "name": "rosh-hashana-menu",
+        "action": "submitUrl",
+        "method": "POST",
+
+        "hidden-inputs": [{
+                "name": "timeStamp",
+                "id": "timeStamp",
+                "value": 0
+            },
+            {
+                "name": "shortNames",
+                "id": "shortNames",
+                "value": []
+            }
+
+        ],
+
+        "formSections": ["entree", "main", "desert", "sides"],
+        "elements": [{
+                "shortname": "liver",
+                "dishname": "chopped_liver",
+                "dishtext": "chopped liver w caramelised onions, egg & herb mayo",
+                "formSection": "entree",
+                "subTitle": "$22/250gm",
+
+                "formElement": {
+                    "name": "chopped_liver",
+                    "type": "select",
+                    "id": "chopped_liver",
+                    "value": "",
+                    "required": true,
+                    "select_options": ["0","1", "2", "3", "4"]
+                }
+            },
+            {
+                "shortname": "hommus",
+                "dishname": "hommus",
+                "dishtext": "chopped liver w caramelised onions, egg & herb mayo",
+                "formSection": "entree",
+                "subTitle": "$22/250gm",
+
+                "formElement": {
+                    "name": "hommus",
+                    "type": "select",
+                    "id": "hommus",
+                    "value": "",
+                    "required": true,
+                    "select_options": ["0","1", "2", "3", "4"]
+                }
+            },
+            {
+                "shortname": "romanian rggplant",
+                "dishname": "romanian_eggplant",
+                "dishtext": "chopped liver w caramelised onions, egg & herb mayo",
+                "formSection": "entree",
+                "subTitle": "$22/250gm",
+
+                "formElement": {
+                    "name": "Romanian_Eggplant",
+                    "type": "select",
+                    "id": "Romanian_Eggplant",
+                    "value": "",
+                    "required": true,
+                    "select_options": ["0","1", "2", "3", "4"]
+                }
+            },
+            {
+                "shortname": "Confit Tuna",
+                "dishname": "Confit_Tuna",
+                "dishtext": "Tuna ",
+                "formSection": "entree",
+                "subTitle": "$22/250gm",
+
+                "formElement": {
+                    "name": "Confit_Tunar",
+                    "type": "select",
+                    "id": "Confit_Tuna",
+                    "value": "",
+                    "required": true,
+                    "select_options": ["0","1", "2", "3", "4"]
+                }
+            }
+        ],
+        "textInputs": [
+            {
+                "type": "text",
+                "class" : "",
+                "name": "name",
+                "value": "name",
+                "required": "required",
+                "placeholder text": "your name..."
+            },
+            {
+                "type": "text",
+                "class" : "",
+                "name": "phone",
+                "value": "phone",
+                "required": "required",
+                "placeholder text": "your contact number..."
+            },
+            {
+                "type": "email",
+                "name": "email",
+                "class" : "",
+                "value": "",
+                "required": "required",
+                "placeholder text": "your email..."
+            },
+            {
+                "type": "textarea",
+                "class" : "",
+                "name": "notes",
+                "value": "notes",
+                "cols" : "",
+                "required": "",
+                "placeholder text": ""
+            }
+        ]
+    }
+}

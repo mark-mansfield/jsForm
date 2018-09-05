@@ -1,0 +1,261 @@
+/* mobile first css  */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,900');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+@import url('https://fonts.googleapis.com/css?family=Anton');
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.7rem;
+}
+
+.body__shopping-cart {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    z-index: 10;
+    width: 100vw;
+    background: #52C1F4;
+    padding: 20px;
+}
+.shopping-cart__delete-cart {
+    cursor: pointer;
+    display: none;
+
+}
+.shopping-cart__delete-cart:hover{
+    color:white;
+
+
+}
+main {
+    width: 100vw;
+    margin: 0;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+/* ! add media query for tablets and bigger */
+
+.main__order-form {
+    margin-top: 100px;
+    width: 100%;
+}
+
+section[js-data="menu__list"] {
+    margin: 20px;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: white;
+    text-align: center;
+}
+
+section>img {
+    width: 50%;
+    margin: auto;
+}
+
+.divider {
+    width: 85%;
+    margin: 13px;
+}
+
+.menuItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.menuItem-title {
+    width: 100%;
+    line-height: 2;
+    vertical-align: middle;
+}
+
+.menu__input-select {
+    margin: 10px auto;
+    padding: 5px;
+    font-size: 1rem;
+    vertical-align: middle;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+
+.select-option__time-picker,
+.select-option__day-picker,
+.contact-name,
+.contact-number,
+.email-address {}
+
+.select-option__time-picker,
+.select-option__day-picker {
+    margin: auto;
+    display: block;
+}
+
+label {
+    font-size: 1rem;
+    text-align: left;
+    margin-left: 5vw;
+    width: auto;
+    display: block;
+}
+
+input {
+    display: block;
+    font-size: 1rem;
+    margin: 20px;
+    padding: 10px;
+    width: 90vw;
+}
+
+input,
+textarea {
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+textarea {
+    margin: 20px;
+    padding: 20px;
+    width: 90vw;
+}
+
+button {
+    margin: 20px;
+    padding: 20px;
+    width: 90vw;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    border-radius: 3px;
+    background: #52C1F4;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    font-family: "Montserrat", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    line-height: 1.1;
+}
+
+h1,h2,h3 {
+    margin: 5px;
+}
+h1 {
+    font-size: 1rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin: 10px;
+}
+
+h3,
+h4 {
+    font-size: 0.8rem;
+}
+
+.item-title {
+    font-size: 0.8rem;
+    ;
+}
+
+@media (min-width: 40rem) {
+    body {
+        font-size: 1rem;
+    }
+    .body__shopping-cart {
+        text-align: right;
+    }
+    .main__order-form {
+        margin-top: 100px;
+        width: 50vw;
+    }
+    .main__order-form-text-input {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 10px 0;
+    }
+    .menu__input-select {
+        margin-top: 10px
+    }
+    .main__order-form-text-input > label {
+        margin: 0;
+        text-align: left;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+        margin: 10px;
+    }
+    h3,
+    h4 {
+        font-size: 0.8rem;
+    }
+
+    h1,h2,h3 {
+        margin: 10px;
+    }
+
+    .item-title {
+        font-size: 1.5rem;
+        margin: 10px;
+    }
+    input {
+        display: block;
+        font-size: 32px;
+        margin: 20px;
+        padding: 20px;
+        width: 50%;
+    }
+    input,
+    textarea {
+        border: 1px solid #ccc;
+        margin-bottom: 20px;
+    }
+    textarea {
+        margin: 20px;
+        padding: 20px;
+        width: 50%;
+    }
+    button {
+        margin: 20px;
+        padding: 20px;
+        width: 50%;
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: white;
+        border-radius: 3px;
+        background: #52C1F4;
+    }
+}
